@@ -1,0 +1,13 @@
+# DataType（数据类型）
+- 是否是undefined：isUndefined
+- 是否是null：isNull
+- 是否是函数：isFunction
+- 是否是箭头函数：isArrowFunction
+- 是否是普通函数：isNormalFunction
+- 是否是对象类型：isObject
+- 是否是类数组：isLikeArray
+- 是否是可迭代对象：isIterable
+- 是否是原始值：isPrimitiveValue
+- 得到数据类型：getType
+- 检测是否是符合Promise A+规范的对象：isPromiseLike
+- 检测对象属性是否是访问器属性：isAccessorProperty

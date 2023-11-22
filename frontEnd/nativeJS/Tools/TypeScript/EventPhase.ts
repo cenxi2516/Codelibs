@@ -1,0 +1,6 @@
+enum EventPhase {
+    NONE = Event.NONE,
+    CAPTURING_PHASE = Event.CAPTURING_PHASE,
+    AT_TARGET = Event.AT_TARGET,
+    BUBBLING_PHASE = Event.BUBBLING_PHASE,
+}

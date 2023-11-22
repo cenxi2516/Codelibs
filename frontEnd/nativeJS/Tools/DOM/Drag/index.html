@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Drag</title>
+    <style>
+        .drag {
+            width: 100px;
+            height: 100px;
+            background-color: #0f0;
+        }
+
+        .target {
+            box-sizing: border-box;
+            position: absolute;
+            top: 0;
+            left: 300px;
+            width: 400px;
+            height: 400px;
+            border: 1px solid #000;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="drag" draggable="true"></div>
+    <div class="target"></div>
+    <script>
+        const dragDom = document.querySelector('.drag');
+
+        // 被拖拽元素事件
+        dragDom.addEventListener('dragstart', (e) => {
+            // 鼠标按下，移动那一瞬触发，仅触发一次
+            console.log('dragstart');
+        });
+
+        dragDom.addEventListener('drag', (e) => {
+            // 鼠标按下移动后不断触发，触发多次，直到拖拽结束
+            console.log('drag');
+        });
+
+        dragDom.addEventListener('dragend', (e) => {
+            // 鼠标松开那一瞬触发，仅触发一次
+            console.log('dragend');
+        });
+
+
+        const targetDom = document.querySelector('.target');
+
+        // 目标元素事件
+        targetDom.addEventListener('dragenter', (e) => {
+            // 鼠标进入目标元素那一瞬触发
+            console.log('dragenter');
+        });
+
+        targetDom.addEventListener('dragover', (e) => {
+            // 鼠标进入目标元素后不断触发，触发多次。直到鼠标离开拖拽元素或拖拽结束
+            console.log('dragover');
+            if (!e.defaultPrevented) {
+                e.preventDefault();
+            }
+        });
+
+        targetDom.addEventListener('dragleave', (e) => {
+            // 鼠标离开目标元素那一瞬触发
+            console.log('dragleave');
+        });
+
+        targetDom.addEventListener('drop', (e) => {
+            // 鼠标在目标元素内松开那一瞬触发，仅触发一次。注意：需在dragover中阻止事件默认行为（被拖拽元素返回原位），才会触发
+            console.log('drop');
+        });
+    </script>
+</body>
+
+</html>

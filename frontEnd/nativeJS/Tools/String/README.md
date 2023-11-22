@@ -1,0 +1,9 @@
+# String（字符串相关）
+- RGB或RGBA转换为HEX颜色值：rgbToHexColor
+- Hex颜色值转换为RGB或RGBA颜色值：hexToRGBColor
+- 获取字符串字符(码位)的长度：getCharacterLength
+- 获取字符串指定索引(码位对应的)字符：getCharAt
+- 获取字符串指定索引字符(码位)的编码值：getCharEncodeAt
+- 将模版字符串中左右尖括号转义为HTML实体字符：formatHTMLEntity
+- 获取字符串字节数：getByteCount
+- 随机获取指定范围的十六进制颜色值：generateRandomHexColor

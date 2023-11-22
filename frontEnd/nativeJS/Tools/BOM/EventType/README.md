@@ -1,0 +1,12 @@
+# EventType（事件相关）
+## window事件
+- 浏览器从断网状态到联网状态触发的事件：addOnlineEvent
+- 浏览器从联网状态到断网状态触发的事件：addOfflineEvent
+- 窗口页面从无到有触发的事件：addPageshowEvent
+- 窗口页面从有到无触发的事件：addPagehideEvent
+- 窗口页面失去焦点时触发的事件：addBlurEvent
+- 窗口页面获取焦点时触发的事件：addFocusEvent
+- 修改localStorage缓存的数据时触发的事件：addStorageEvent
+- 视口变更时触发的事件：addResizeEvent
+- 页面锚点更改触发的事件：addHashchangeEvent
+- 页面历史的state更改触发的事件：addPopstateEvent

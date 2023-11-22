@@ -1,0 +1,13 @@
+# Object（Object相关）
+- 数据类型：typeOf
+- 属性是否可写：propertyIsWritable
+- 属性是否可配置：propertyIsConfigurable
+- 完整的对象属性复制：completeAssign
+- 数据属性默认描述符：dataPropertyDefaultDescriptor
+- 访问器属性默认描述符：accessorPropertyDefaultDescriptor
+- 浅拷贝：clone
+- 对象属性分类：propertyType
+- 深拷贝：deepClone
+- 对象或其原型中是否存在指定属性：hasProperty
+- 创建一个类数组：createLikeArray
+- 判断两个数据是否相等（NaN与NaN相等，+0与-0相等）：isEqual
