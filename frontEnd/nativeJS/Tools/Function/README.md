@@ -5,3 +5,4 @@
 - 函数防抖：debounce
 - 函数节流：throttle
 - 函数（任务）锁：taskLock
+- 函数计算结果缓存：memorized
